@@ -1,47 +1,195 @@
 <html>
-<head> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CHATS </title>
-<style>
-body {
-  background-image: url("fondstyle.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+<head>
+<title>CHAT</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      div.scrollmenu {
+      background-color: rgb(110, 128, 207);
+      overflow: auto;
+      white-space: nowrap;
+      }
+      
+      div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      }
+      
+      div.scrollmenu a:hover {
+      background-color: rgb(33, 28, 92);
+      }
+      </style>
+      
+            <style>
+            * {
+            box-sizing: border-box;
+            }
+            
+            body {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            
+            /* The grid: Four equal columns that floats next to each other */
+            .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            }
+            
+            /* Style the images inside the grid */
+            .column img {
+            opacity: 0.8; 
+            cursor: pointer;
+            }
+            
+            .column img:hover {
+            opacity: 1;
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+            
+            /* The expanding image container */
+            .container {
+            position: relative;
+            bottom: 15px;
+            left: 15px;
+            display: none;
+            max-width: 40%;
+            height: auto;
+            }
+            
+            /* Expanding image text */
+            #imgtext {
+            position: absolute;
+            bottom: 1500x;
+            left: 15px;
+            color: rgb(110, 128, 207);
+            font-size: 50px;
+            }
+            
+            /* Closable button inside the expanded image */
+            .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 50px;
+            cursor: pointer;
+            }
+            </style>
+                  
+                  <style>
+                  .responsive {
+                  width: 30%;
+                  height: auto;
+                  }
+                  </style>
 
-h1 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 100px;
-}
+                     <meta name="viewport" content="width=device-width, initial-scale=1">
+                 
+                     <style>
+                        img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: 100%;
+                        }
+                        video {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: 100%;
+                        }
+                        </style>
 
-p {
-    color: rgb(255, 255, 255);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  text-align: center;
-  font-size: 55px;
-}
-</style>
-
+                              <style>
+                              body {
+                              background-image: url("fondstyle.jpg");
+                              background-repeat: no-repeat;
+                              background-attachment: fixed;
+                              background-size: cover;
+                              }
+                        
+                              h1 {
+                              color: rgb(110, 128, 207);
+                              text-align: center;
+                              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                              font-size: 100px;
+                              }
+                        
+                                 p {
+                                    color: rgb(110, 128, 207);
+                                    font-family: Georgia, 'Times New Roman', Times, serif;
+                                 font-size: 20px;
+                                 text-align: center;
+                                 font-size: 30px;
+                                 }
+                              </style>
+ 
 </head>
 <body>
-    
-<h1>Le site d'Héléna</h1>
-<p>Ce site répértorie beaucoup de photos et de vidéos de chats trop mignon.</p>
+      <div class="scrollmenu">
+         <a href="#home">Chats</a>
+         <a href="#news">Chats</a>
+         <a href="#contact">Chats</a>
+         <a href="#about">Chats</a>                          
+         <a href="#support">Chats</a>
+         <a href="#blog">Chats</a>
+         <a href="#tools">Chats</a>  
+         <a href="#base">Chats</a>
+         <a href="#custom">Chats</a>
+         <a href="#more">Chats</a>
+         <a href="#logo">Chats</a>
+         <a href="#friends">Chats</a>
+         <a href="#partners">Chats</a>
+         <a href="#people">Chats</a>
+         <a href="#work">Chats</a>
+      </div>                           
+       
+            <h1>Le site des chats</h1>
+            <p>Ce site répértorie beaucoup de photos et de vidéos de chats trop mignon.</p>
+            &nbsp;&nbsp; 
 
-<img src="chat lit.jpg" alt="chat lit.jpg" width="594" height="782" controls></img>
-    <video width="1120" height="940" controls>
-        <source src="SQUISH THAT CAT.mp4" type="video/mp4"><source>
-    </video>
-
-
-    <img src="chatchonk.jpg" alt="chatchonk.jpg" width="660" height="659" controls></img>
-    <img src="chatpeur.jpg" alt="chatpeur.jpg"></img>
-    <img src="chatqueue.jpg" alt="chatqueue.jpg" width="590" height="659" controls></img>
-
+               <div class="row">
+                  <div class="column">
+                  <img src="chatchonk.jpg" alt="chat chonk" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                  <img src="chatqueue.jpg" alt="chat et sa queue xD" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                  <img src="chat lit.jpg" alt="chat dans le lit" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                  <img src="chatpeur.jpg" alt="chat qui a peur" style="width:100%" onclick="myFunction(this);">
+                  </div>
+               </div>
+         
+                     <div class="container">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="expandedImg" style="width:100%">
+                        <div id="imgtext"></div>
+                     </div>
+         
+      
+                           <script>
+                              function myFunction(imgs) {
+                              var expandImg = document.getElementById("expandedImg");
+                              var imgText = document.getElementById("imgtext");
+                              expandImg.src = imgs.src;
+                              imgText.innerHTML = imgs.alt;
+                              expandImg.parentElement.style.display = "block";
+                              }
+                              </script>
+           
 </body>
 </html>
+ 
+ 
 
